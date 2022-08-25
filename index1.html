@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dz1</title>
+</head>
+<body>
+    <script>
+        let x = 6;
+        let y = 14;
+        let z = 4;
+        document.write((x += y - x++ *z) + "<br/>");
+        //x++ = 6
+        //*z = 6*4=24
+        //y-=14 -24=-10
+        //x += 6-10=-4
+        x = 6;
+        y = 14;
+        z = 4;
+        document.write((z = --x - y*5) + "<br/>");
+        //--x=5;
+        //y*5=14*5=70;
+        //--x - y*5=5-70=-65;
+        //z=-65;
+        x = 6;
+        y = 14;
+        z = 4;
+        document.write((z - x++ + y*5) + "<br/>");
+        //x++=6;
+        //y*5=14*5=70;
+        //z-x++=4-6=-2;
+        // + y*5=-2+70=68
+        x = 6;
+        y = 14;
+        z = 4;
+        document.write((x = y - x++ *z) + "<br/>");
+        //x++=6;
+        //x++ *z=6*4=24;
+        //y -=14-24=-10;
+        //x=-10;
+        x = 6;
+        y = 14;
+        z = 4;
+        document.write((y /= x + 5% z) + "<br/>");
+        //5% z=1;
+        //x + 5% z=6+1=7;
+        //y /=14/7=2;
+       
+    
+    </script>
+</body>
+</html>
